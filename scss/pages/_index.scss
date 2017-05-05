@@ -1,0 +1,63 @@
+/*!
+ * @author Antonio Gatta <a.gatta@xeader.com>
+ * @url http://www.xeader.com
+ * @copyright Copyright (c) 2017
+ * @license All right reserved
+ */
+
+$xeader-color: #00A4EB;
+
+body.index {
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #eee;
+
+    a {
+        text-decoration: underline;
+        &:hover {
+            color: $xeader-color;
+        }
+    }
+
+    header, article, footer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header, footer {
+        color: #999;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+
+    article {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-weight: 100;
+        text-transform: lowercase;
+        margin: 0;
+    }
+
+    code {
+        font-size: 1rem;
+        color: #999;
+    }
+
+    .minimal-grunt-icon_xeader {
+        color: #00A4EB;
+        display: block;
+    }
+}

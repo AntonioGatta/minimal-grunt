@@ -1,0 +1,50 @@
+{
+    "name": "minimal-grunt",
+    "description": "",
+    "main": "index.js",
+    "authors": [
+        "Antonio Gatta"
+    ],
+    "license": "ISC",
+    "keywords": [
+        "grunt",
+        "sass",
+        "html"
+    ],
+    "homepage": "https://github.com/AntonioGatta/minimal-grunt",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "modernizr": "~2.8.3",
+        "normalize-scss": "~3.0.3",
+        "susy": "~2.2.2",
+        "breakpoint-sass": "~2.5.0",
+        "fastclick": "~1.0.6",
+        "jquery": "~2.1.3",
+        "slick-carousel": "~1.5.2",
+        "jquery-easing-original": "~1.3.1",
+        "compass-mixins": "~1.0.2",
+        "jquery-mousewheel": "~3.1.12",
+        "jquery.swipe-events.js": "https://github.com/eikes/jquery.swipe-events.js.git",
+        "jquery_appear": "https://github.com/morr/jquery.appear.git#~0.3.4",
+        "blast-text": "~2.0.0",
+        "velocity": "~1.2.2",
+        "foundation": "^5.5.3",
+        "scrollreveal": "2.3.2",
+        "parallax": "^2.1.3",
+        "fancybox": "^2.1.5",
+        "gsap": "greensock#^1.19.0",
+        "jquery-ui": "jqueryui#^1.12.1",
+        "jquery-deparam": "^0.5.1",
+        "isotope": "^3.0.1",
+        "imagesloaded": "^4.1.1",
+        "jquery-hoverintent": "jquery-hoverIntent#^1.8.1",
+        "isotope-packery": "^2.0.0"
+    }
+}

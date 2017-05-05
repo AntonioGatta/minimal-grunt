@@ -1,0 +1,44 @@
+/*!
+ * @author Antonio Gatta <a.gatta@xeader.com>
+ * @url http://www.xeader.com
+ * @copyright Copyright (c) 2017
+ * @license All right reserved
+ */
+
+@mixin vertical-align() {
+    display: table;
+    .vertical-align {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+@mixin sans() {
+    text-transform: none;
+    font-style: normal;
+    font-family: $sans;
+    line-height: 1.5em;
+    color: inherit;
+}
+
+@mixin serif() {
+    text-transform: none;
+    font-family: $serif;
+    line-height: 1.7em;
+    color: rgba($black, .7);
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+}

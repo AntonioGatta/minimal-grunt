@@ -1,0 +1,115 @@
+/*!
+ * @author Antonio Gatta <a.gatta@xeader.com>
+ * @url http://www.xeader.com
+ * @copyright Copyright (c) 2017
+ * @license All right reserved
+ */
+
+*, *:after, *:before {
+    box-sizing: border-box
+}
+
+*::selection {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    font-weight: 400;
+    font-size: rem-calc(12);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: normal;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: opacity 1s $easeInOutCirc;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .5s $easeOutExpo;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+}
+
+menu {
+    padding: 0;
+    margin: 0;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 0;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.fancybox-overlay {
+    z-index: 1000000;
+    background: rgba($black, .95);
+}
+
+.fancybox-wrap {
+    z-index: 1000001;
+}
+
+.fancybox-opened {
+    z-index: 1000002;
+}
+
+@-webkit-keyframes showIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.after-hidden {
+    &:after {
+        display: none !important;
+    }
+}
+
+.before-hidden {
+    &:before {
+        display: none !important;
+    }
+}
+
+.pseudo-hidden {
+    &:after,
+    &:before {
+        display: none !important;
+    }
+}
